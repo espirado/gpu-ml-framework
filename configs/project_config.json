@@ -1,0 +1,41 @@
+{
+  "project": {
+    "name": "gpu-observability-research",
+    "version": "0.1.0",
+    "description": "Autonomous Behavioral Pattern-Driven Optimization for ML Infrastructure"
+  },
+  "data": {
+    "raw_path": "data/raw/",
+    "processed_path": "data/processed/",
+    "external_path": "data/external/"
+  },
+  "datasets": {
+    "alibaba_gpu_2020": {
+      "url": "https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020",
+      "description": "6.5K+ GPUs, 2-month ML workload trace"
+    },
+    "alibaba_gpu_2023": {
+      "url": "https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2023",
+      "description": "6.2K+ GPUs, fragmentation analysis"
+    },
+    "alibaba_2018": {
+      "url": "https://github.com/alibaba/clusterdata/tree/master/cluster-trace-v2018",
+      "description": "4K machines, 8-day general workload"
+    }
+  },
+  "analysis": {
+    "behavioral_patterns": {
+      "temporal_windows": [
+        60,
+        300,
+        3600
+      ],
+      "pattern_types": [
+        "resource_hoarding",
+        "queue_spiraling",
+        "recurring_tasks"
+      ],
+      "cre_inspired": true
+    }
+  }
+}
