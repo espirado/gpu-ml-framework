@@ -1,0 +1,6 @@
+Storage Assessment - GPU Observability Research
+==================================================
+
+Free Space: 204.2 GB
+Primary Dataset (GPU 2020): 25.0 GB
+Recommended Action: Download primary dataset (GPU 2020) and proceed with full analysis

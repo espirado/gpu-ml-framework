@@ -85,3 +85,4 @@ results/models/*
 
 # Config overrides
 configs/local_*
+/data/
