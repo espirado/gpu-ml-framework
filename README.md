@@ -1,4 +1,4 @@
-# GPU Observability Research: Autonomous Behavioral Pattern Learning
+# Autonomous Infrastructure Learning: Behavioral Pattern‑Driven Optimization
 
 ## Project Overview
 
@@ -39,20 +39,20 @@ Primary focus on **Alibaba Cluster GPU Traces**:
 
 ## Quick Start
 
-1. **Setup Environment**
+1. Install dependencies
    ```bash
-   python setup_repo.py
    pip install -r requirements.txt
    ```
 
-2. **Download Data**
+2. (Optional) Generate synthetic logs
    ```bash
-   python scripts/download_data.py --dataset gpu-2020
+   python scripts/generate_synthetic_logs.py --out data/raw/synthetic/logs.csv --n 5000
    ```
 
-3. **Explore Data**
+3. Explore datasets
    ```bash
-   jupyter notebook notebooks/exploration/01_initial_exploration.ipynb
+   jupyter notebook notebooks/exploration/02_alibaba_quick_peek.ipynb
+   jupyter notebook notebooks/exploration/03_logs_dataset_and_problem.ipynb
    ```
 
 ## Key Features
